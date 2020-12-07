@@ -23,9 +23,12 @@ const Header = () => {
         window.localStorage.setItem('theme', currentTheme);
     }, [currentTheme]);
 
-  return <HeaderNav>
+  return <HeaderNav
+            initial={{y: -72, opacity: 0}}
+            animate={{y: 0, opacity: 1}}
+            transition={{duration: 1, ease: [0.6, 0.07, -0.03, 0.9] }}
+         >
       <Container>
-          {console.log(currentTheme)}
           <Flex spaceBetween noHeight>
               <Logo>
                   <Link to="/">FURR</Link>
