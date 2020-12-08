@@ -39,7 +39,7 @@ const Header = ({onCursor}) => {
                         onMouseEnter={() => onCursor('pointer')}>
                     </span>
                     <Link to="/"
-                        onMouseEnter={() => onCursor('hovered')}>
+                          onMouseEnter={() => onCursor('hovered')}>
                       W
                   </Link>
               </Logo>
