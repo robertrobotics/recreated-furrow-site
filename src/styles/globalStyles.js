@@ -49,3 +49,28 @@ export const Flex = styled.div`
         height: 0;
     `}
 `
+
+export const Cursor = styled.div`
+    position: absolute;
+    top: 0;
+    width: 0;
+    width: 32px;
+    height: 32px;
+    background-color: ${props => props.theme.red};
+    border-radius: 100%;
+    transform: translate(-50%, -50%);
+    transition: all .3s ease-in-out;
+    transition-property: width, height, border;
+    will-change: width, height, transform, border;
+    pointer-events: none;
+    z-index: 999;
+    &.pointer {
+        border: 4px solid ${props => props.theme.text} !important;
+    }
+    &.hovered {
+        background: transparent !important;
+        width: 56px; 
+        height: 56px;
+        border: 4px solid ${props => props.theme.red};
+    }
+`
