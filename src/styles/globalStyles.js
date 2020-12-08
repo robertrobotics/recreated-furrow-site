@@ -66,11 +66,17 @@ export const Cursor = styled.div`
     z-index: 999;
     &.pointer {
         border: 4px solid ${props => props.theme.text} !important;
+        background: transparent !important;
+        width: 56px; 
+        height: 56px;
     }
     &.hovered {
         background: transparent !important;
         width: 56px; 
         height: 56px;
         border: 4px solid ${props => props.theme.red};
+    }
+    &.nav-open {
+        background: ${props => props.theme.text};
     }
 `

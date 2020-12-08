@@ -7,7 +7,7 @@ import { Link } from 'gatsby'
 
 import { useGlobalStateContext, useGlobalDispatchContext } from '../context/globalContext'
 
-const Header = ({onCursor}) => {
+const Header = ({onCursor, toggleMenu, setToggleMenu}) => {
     const dispatch = useGlobalDispatchContext();
     const { currentTheme } = useGlobalStateContext();
 
@@ -43,7 +43,7 @@ const Header = ({onCursor}) => {
                       W
                   </Link>
               </Logo>
-              <Menu>
+              <Menu onClick={() => setToggleMenu(!toggleMenu)}>
                   <button>
                       <span></span>
                       <span></span>
