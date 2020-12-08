@@ -30,14 +30,18 @@ const Header = ({onCursor}) => {
          >
       <Container>
           <Flex spaceBetween noHeight>
-              <Logo onMouseEnter={() => onCursor('hovered')}
-                    onMouseLeave={onCursor}>
-                  <Link to="/">FURR</Link>
+              <Logo onMouseLeave={onCursor}>
+                  <Link to="/"
+                        onMouseEnter={() => onCursor('hovered')}>
+                      FURR
+                  </Link>
                   <span onClick={toggleTheme}
-                        onMouseEnter={() => onCursor('pointer')}
-                        onMouseLeave={onCursor}>
+                        onMouseEnter={() => onCursor('pointer')}>
                     </span>
-                  <Link to="/">W</Link>
+                    <Link to="/"
+                        onMouseEnter={() => onCursor('hovered')}>
+                      W
+                  </Link>
               </Logo>
               <Menu>
                   <button>
