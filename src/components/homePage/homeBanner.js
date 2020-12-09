@@ -1,4 +1,4 @@
-import React, { useEffect, useRef }  from 'react'
+import React, { useEffect, useRef, componentDidMount }  from 'react'
 
 import { Banner, Video, Canvas, BannerTitle, HeadLine } from "../../styles/homeStyles"
 
@@ -10,7 +10,7 @@ import { useGlobalStateContext } from '../../context/globalContext'
 
 const HomeBanner = ({onCursor}) => {
     let canvas = useRef(null);
-    let size = useWindowSize()
+    let size = useWindowSize();
     const { currentTheme } = useGlobalStateContext();
 
     useEffect(() => {

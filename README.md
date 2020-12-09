@@ -6,5 +6,6 @@ Tech stack libraries:
 - ReactJS 
 - Gatsby 
 - Framer Motion
+- Styled Components
 
 
