@@ -53,7 +53,7 @@ const Navigation = ({onCursor, toggleMenu, setToggleMenu}) => {
                                             <motion.li key={route.id}
                                                        onHoverStart={ () => setRevealVideo({ show: true, video: route.video, key: route.id }) }
                                                        onHoverEnd={ () => setRevealVideo({ show: false, video: route.video, key: route.id }) }>
-                                                <Link to={`projects/${route.path}`}>
+                                                <Link to={`/`}>
                                                     <motion.div initial={{ x: -100 }} 
                                                                 whileHover={{ x: -40, transition: { duration: .3, ease: [.6, 0.05, -.01, .9]}  }} 
                                                                 className='link'>

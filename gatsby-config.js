@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: "/reponame",
+  pathPrefix: "/recreated-furrow-site",
   siteMetadata: {
     title: `Furrow's site recreated`,
     description: `Site has been recreated with Wrong Akram's YT tutorial.`,
@@ -29,8 +29,5 @@ module.exports = {
       },
     },
     `gatsby-plugin-styled-components`,
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 }
